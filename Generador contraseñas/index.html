@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Generador de Contraseñas</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Generador de Contraseñas</h1>
+    <form id="password-form">
+      <label for="password-length">Longitud de la contraseña:</label>
+      <input type="number" id="password-length" min="4" max="20" required>
+
+      <label for="uppercase">Incluir letras mayúsculas:</label>
+      <input type="checkbox" id="uppercase">
+
+      <label for="lowercase">Incluir letras minúsculas:</label>
+      <input type="checkbox" id="lowercase">
+
+      <label for="numbers">Incluir números:</label>
+      <input type="checkbox" id="numbers">
+
+      <label for="symbols">Incluir símbolos:</label>
+      <input type="checkbox" id="symbols">
+
+      <button type="submit">Generar Contraseña</button>
+    </form>
+
+    <div id="password-output">
+      <h2>Contraseña Generada:</h2>
+      <input type="text" id="password" readonly>
+      <button id="copy-button">Copiar al Portapapeles</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
